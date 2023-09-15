@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/post_background"
+        tools:ignore="ContentDescription"/>
+
+    <include
+        android:id="@+id/main_header"
+        layout="@layout/part_of_part_header" />
+
+    <TextView
+        android:id="@+id/main_main_textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="12dp"
+        android:fontFamily="@font/baloo_bhaina_2_bold"
+        android:text="@string/main_top_games"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_main_textView_title">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_wildSpin"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_wildSpinPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/wild_spin_preview_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/wild_spin_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_wild_spin"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wildSpinPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wildSpinPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wildSpinPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_booksGiza"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_booksGizaPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/books_gize_preview_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/books_giza_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_books_giza"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_booksGizaPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_booksGizaPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_booksGizaPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_royalLotus"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_royalLotusPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/royal_lotus_preview_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/royal_lotus_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_royal_lotus"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_royalLotusPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_royalLotusPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_royalLotusPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_blackJack"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_blackJackPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/blackjack_preview_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/black_jack_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_blackjack"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_blackJackPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_blackJackPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_blackJackPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_wolfGold"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_wolfGoldPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/wolf_gold_preview_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/wolf_gold_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_wolf_gold"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wolfGoldPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wolfGoldPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_wolfGoldPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_fiveLions"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_fiveLionsPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/five_lions_preview_description"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/five_lions_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_five_lions"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_fiveLionsPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_fiveLionsPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_fiveLionsPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_elvisFrog"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_elvisFrogPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/elvis_frog_preview_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/elvis_frog_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_elvis_frog"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_elvisFrogPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_bgaming"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_elvisFrogPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_elvisFrogPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_main_constraintLayout_buffalo"
+                android:layout_margin="10dp"
+                android:layout_columnWeight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:selectableItemBackground">
+
+                <ImageView
+                    android:id="@+id/main_main_imageView_buffaloPreview"
+                    android:layout_width="150dp"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/buffalo_preview_description"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/buffalo_preview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:paddingBottom="2dp"
+                    android:fontFamily="@font/baloo_bhaina_2_semibold"
+                    android:text="@string/main_buffalo"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_buffaloPreview" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/baloo_bhaina_2"
+                    android:text="@string/main_by_platipus"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_buffaloPreview" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="11dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/main_main_imageView_buffaloPreview"
+                    app:srcCompat="@drawable/five_stars"
+                    tools:ignore="ContentDescription"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </GridLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
