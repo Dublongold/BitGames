@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".applicationParts.WebApplicationPart"
+            android:theme="@style/Theme.BitGames.Web"
             android:exported="false"
             android:configChanges="screenSize|orientation|keyboardHidden"
             android:windowSoftInputMode="adjustResize"
