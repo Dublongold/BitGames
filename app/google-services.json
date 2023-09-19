@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "979052901216",
-    "project_id": "bitgames-ffde7",
-    "storage_bucket": "bitgames-ffde7.appspot.com"
+    "project_number": "96604081146",
+    "project_id": "bitstarz-place",
+    "storage_bucket": "bitstarz-place.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:979052901216:android:5febc94c1fb1f4e9dce405",
+        "mobilesdk_app_id": "1:96604081146:android:52d081dee29799f6727243",
         "android_client_info": {
-          "package_name": "everyone_should.play_in.bitGames"
+          "package_name": "com.bibitstarzrz.csnoslo.tsapp"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCPPwpdt0mmHmbZF8oQn36A2o7Qmu87r8Y"
+          "current_key": "AIzaSyC23gWEwifLfVuPu6a8UE1aMdKC3W7ie7Y"
         }
       ],
       "services": {

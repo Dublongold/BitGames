@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "everyone_should.play_in.bitGames"
+    namespace = "com.bibitstarzrz.csnoslo.tsapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "everyone_should.play_in.bitGames"
+        applicationId = "com.bibitstarzrz.csnoslo.tsapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -54,4 +54,6 @@ dependencies {
     // Dagger
     implementation("com.google.dagger:dagger:latest.release")
     ksp("com.google.dagger:dagger-compiler:latest.release")
+    // OneSignal
+    implementation("com.onesignal:OneSignal:[5.0.0, 5.99.99]")
 }
