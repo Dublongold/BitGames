@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "96604081146",
-    "project_id": "bitstarz-place",
-    "storage_bucket": "bitstarz-place.appspot.com"
+    "project_number": "755517250402",
+    "project_id": "bitstarz-5187f",
+    "storage_bucket": "bitstarz-5187f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:96604081146:android:52d081dee29799f6727243",
+        "mobilesdk_app_id": "1:755517250402:android:1e01c1cdab084b7493ea3b",
         "android_client_info": {
           "package_name": "com.bibitstarzrz.csnoslo.tsapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC23gWEwifLfVuPu6a8UE1aMdKC3W7ie7Y"
+          "current_key": "AIzaSyBeoG-bcbDqvCOBfb5eUbS5DX32ePiA4Rw"
         }
       ],
       "services": {
